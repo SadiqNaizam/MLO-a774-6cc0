@@ -4,89 +4,89 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 36 100% 97%; /* Warm Cream */
+    --foreground: 244 30% 28%; /* Deep Indigo */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 36 100% 97%; /* Warm Cream */
+    --card-foreground: 244 30% 28%; /* Deep Indigo */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 36 100% 97%; /* Warm Cream */
+    --popover-foreground: 244 30% 28%; /* Deep Indigo */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 244 45% 40%; /* Deep Indigo */
+    --primary-foreground: 40 80% 96%; /* Warm Cream/Off-white */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 33 100% 56%; /* Vibrant Saffron */
+    --secondary-foreground: 244 40% 20%; /* Dark Indigo */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 36 30% 92%; /* Slightly darker cream */
+    --muted-foreground: 244 25% 50%; /* Muted Indigo */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 85% 60%; /* Regal Gold */
+    --accent-foreground: 244 40% 20%; /* Dark Indigo */
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 36 20% 88%; /* Subtle cream border */
+    --input: 36 20% 88%; /* Subtle cream border */
+    --ring: 45 85% 60%; /* Regal Gold */
 
-    --radius: 0.5rem;
+    --radius: 0.375rem; /* 6px */
 
-    --sidebar-background: 0 0% 98%;
+    /* Font Variables */
+    --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar Variables - Light Mode */
+    --sidebar-background: 36 100% 97%;
+    --sidebar-foreground: 244 30% 28%;
+    --sidebar-primary: 244 45% 40%;
+    --sidebar-primary-foreground: 40 80% 96%;
+    --sidebar-accent: 45 85% 60%;
+    --sidebar-accent-foreground: 244 40% 20%;
+    --sidebar-border: 36 20% 88%;
+    --sidebar-ring: 45 85% 60%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 244 20% 11%; /* Very Dark Indigo/Charcoal */
+    --foreground: 36 70% 93%; /* Light Warm Cream */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 244 20% 11%;
+    --card-foreground: 36 70% 93%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 244 20% 11%;
+    --popover-foreground: 36 70% 93%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 244 55% 68%; /* Brighter Indigo */
+    --primary-foreground: 244 30% 15%; /* Very Dark Indigo for text on primary */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 33 100% 65%; /* Brighter Saffron */
+    --secondary-foreground: 33 40% 12%; /* Dark brown/saffron for text */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 244 18% 18%; /* Slightly lighter than dark background */
+    --muted-foreground: 36 30% 70%; /* Muted light cream */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 45 90% 68%; /* Brighter Gold */
+    --accent-foreground: 45 40% 12%; /* Dark brown/gold for text */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 244 15% 22%; /* Subtle dark border */
+    --input: 244 15% 22%;
+    --ring: 45 90% 68%; /* Brighter Gold */
+
+    /* Sidebar Variables - Dark Mode */
+    --sidebar-background: 244 20% 11%;
+    --sidebar-foreground: 36 70% 93%;
+    --sidebar-primary: 244 55% 68%;
+    --sidebar-primary-foreground: 244 30% 15%;
+    --sidebar-accent: 45 90% 68%;
+    --sidebar-accent-foreground: 45 40% 12%;
+    --sidebar-border: 244 15% 22%;
+    --sidebar-ring: 45 90% 68%;
   }
 }
 
@@ -97,5 +97,10 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans); /* Set default body font */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif); /* Set default heading font */
   }
 }
